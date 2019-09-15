@@ -48,6 +48,7 @@ input.onButtonPressed(Button.A, function () {
             strip.showColor(neopixel.colors(NeoPixelColors.Red))
             music.beginMelody(music.builtInMelody(Melodies.Wawawawaa), MelodyOptions.Once)
         }
+        strip.show()
         basic.pause(10000)
     }
 })
@@ -55,6 +56,7 @@ let sound = 0
 let strip: neopixel.Strip = null
 strip = neopixel.create(DigitalPin.P12, 5, NeoPixelMode.RGB)
 gatorMicrophone.setGain(GainOptions.Eight)
+
 ```
 
 ```package
